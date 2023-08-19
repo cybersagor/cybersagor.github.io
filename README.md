@@ -4,8 +4,8 @@ I am Cyber Sagor known as Professor the Hunter.
 
 # 𝚂𝚘𝚌𝚒𝚊𝚕 𝙼𝚎𝚍𝚒𝚊:
 >𝙵𝚊𝚌𝚎𝚋𝚘𝚘𝚔: https://facebook.com/bughuntar
-𝚃𝚠𝚒𝚝𝚝𝚎𝚛: https://twitter.com/bughuntar --> 𝚁𝚎𝚌𝚘𝚖𝚖𝚎𝚗𝚍𝚎𝚍
-𝙻𝚒𝚗𝚔𝚎𝚍𝙸𝚗: https://linkedin.com/in/bughuntar --> 𝚁𝚎𝚌𝚘𝚖𝚖𝚎𝚗𝚍𝚎𝚍
+>𝚃𝚠𝚒𝚝𝚝𝚎𝚛: https://twitter.com/bughuntar --> 𝚁𝚎𝚌𝚘𝚖𝚖𝚎𝚗𝚍𝚎𝚍
+>𝙻𝚒𝚗𝚔𝚎𝚍𝙸𝚗: https://linkedin.com/in/bughuntar --> 𝚁𝚎𝚌𝚘𝚖𝚖𝚎𝚗𝚍𝚎𝚍
 𝚈𝚘𝚞𝚃𝚞𝚋𝚎: https://youtube.com/bughuntar
 𝙼𝚎𝚍𝚒𝚞𝚖: https://medium.com/@bughuntar
 𝙶𝚒𝚝𝚑𝚞𝚋: https://github.com/bughuntar
