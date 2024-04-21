@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professor Software Solutions</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
+    .hero-title {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero-description {
+      font-size: 1.2rem;
+      color: #ddd;
+      margin-bottom: 30px;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #ffcc00;
+      color: #333;
+      text-decoration: none;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .cta-button:hover {
+      background-color: #ffdb4d;
+    }
+    .services-section {
+      padding: 50px 0;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .service {
+      background-color: #fff;
+      color: #333;
+      border: 2px solid #333;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .service img {
+      width: 60px;
+      margin-bottom: 20px;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #333;
+    }
+    .twitter-section {
+      padding: 50px 0;
+    }
+    .twitter-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .twitter-post {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .twitter-tweet {
+      margin: 0 !important;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    .footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .hall-of-fame-section {
+      padding: 50px 0;
+    }
+    .hall-of-fame-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .hall-of-fame-image {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .leaderboard-section {
+      padding: 50px 0;
+    }
+    .leaderboard-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+    .leaderboard-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .leaderboard-year {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .leaderboard-ranking {
+      font-size: 1.1rem;
+      color: #777;
+    }
+    .leaderboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.leaderboard-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.leaderboard-item:hover {
+  transform: scale(1.05);
+}
+
+.leaderboard-year {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.leaderboard-ranking {
+  font-size: 1.1rem;
+  color: #777;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #333;
+}
+.header {
+  background-image: linear-gradient(to bottom, #2c3e50, #34495e); /* Background gradient */
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+  animation: fadeIn 1s ease; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ffcc00;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ffdb4d;
+}
+.hall-of-fame-section {
+  background-color: #f2f2f2; /* Background color */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hall-of-fame-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hall-of-fame-image {
+  width: 150px; /* Adjust image size */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.hall-of-fame-image:hover {
+  transform: scale(1.05);
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+.hall-of-fame-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hall-of-fame-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hall-of-fame-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.hall-of-fame-image-container::before {
+  content: attr(data-rank);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hall-of-fame-image-container:hover::before {
+  opacity: 1;
+}
+
+.hall-of-fame-image {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.hall-of-fame-image:hover {
+  transform: scale(1.05);
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+  <header class="header">
+  <div class="hero">
+    <div class="container">
+      <h1 class="hero-title" style="color: white;">Welcome to Professor Software Solutions</h1>
+      <p class="hero-description">Your Trusted Partner in Software Development</p>
+      <a href="#services" class="cta-button" style="color: black;background-color: white;">Explore Our Services</a>
+    </div>
+  </div>
+</header>
+
+
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2 class="section-title" style="color: white;">Our Services</h2>
+      <div class="services-grid">
+        <div class="service">
+          <img src="https://bughuntar.com/wp-content/uploads/2024/04/web-development-icon.png" alt="Web Development">
+          <h3>Web Development</h3>
+          <p>We specialize in creating professional, user-friendly websites tailored to your brand and audience.</p>
+        </div>
+        <div class="service">
+          <img src="https://bughuntar.com/wp-content/uploads/2024/04/software-development-icon.png" alt="Software Development">
+          <h3>Software Development</h3>
+          <p>Custom software solutions designed to streamline your business operations and enhance productivity.</p>
+        </div>
+        <div class="service">
+          <img src="https://bughuntar.com/wp-content/uploads/2024/04/cybersecurity-icon.png" alt="Cybersecurity Solutions">
+          <h3>Cybersecurity Solutions</h3>
+          <p>Protect your valuable data and secure your digital infrastructure with our advanced cybersecurity services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="twitter-section">
+    <div class="container">
+      <h2 class="section-title" style="color: white;">Latest from Twitter</h2>
+      <!-- Twitter posts displayed in a 3x3 grid -->
+      <div class="twitter-grid">
+        
+        <div class="twitter-post">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Got acknowledgment on the HackerOne private bug bounty program policy page.<br>Thank you <a href="https://twitter.com/Hacker0x01?ref_src=twsrc%5Etfw">@Hacker0x01</a> <br><br>Winner: Impactful Report Streak in Q3 2023 <a href="https://t.co/mJWb4CmjKa">pic.twitter.com/mJWb4CmjKa</a></p>&mdash; MD Sagor Hossain (Professor) 🇧🇩 (@bughuntar) <a href="https://twitter.com/bughuntar/status/1737504877134463408?ref_src=twsrc%5Etfw">December 20, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="twitter-post">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Received a new review from HackerOne private program.🙂<a href="https://t.co/mYXoFi827X">pic.twitter.com/mYXoFi827X</a></p>&mdash; MD Sagor Hossain (Professor) 🇧🇩 (@bughuntar) <a href="https://twitter.com/bughuntar/status/1718644105042161875?ref_src=twsrc%5Etfw">October 29, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="twitter-post">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">🥳-Hacker of the Quarter-🥳<br><br>Got the Hacker of the Quarter award from a HackerOne private bug bounty program.<br>Thank you <a href="https://twitter.com/Hacker0x01?ref_src=twsrc%5Etfw">@Hacker0x01</a> <a href="https://t.co/ojvCFGMDMw">pic.twitter.com/ojvCFGMDMw</a></p>&mdash; MD Sagor Hossain (Professor) 🇧🇩 (@bughuntar) <a href="https://twitter.com/bughuntar/status/1737505788577673469?ref_src=twsrc%5Etfw">December 20, 2023</a></blockquote>
+        </div>
+
+        <!-- Add more Twitter posts here if needed -->
+      </div>
+    </div>
+  </section>
+
+ <section class="hall-of-fame-section">
+  <div class="container">
+    <h2 class="section-title">Hall of Fame</h2>
+    <div class="hall-of-fame-grid">
+      <div class="hall-of-fame-image-container" data-rank="10th">
+        <a href="https://www.chromatic.com/docs/security" target="_blank">
+          <img src="https://static-00.iconduck.com/assets.00/chromatic-icon-1024x1024-hkcb0nqf.png" alt="Chromatic" class="hall-of-fame-image">
+        </a>
+      </div>
+      <div class="hall-of-fame-image-container" data-rank="13th">
+        <a href="https://bugcrowd.com/pinterest/hall-of-fame" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="Pinterest" class="hall-of-fame-image">
+        </a>
+      </div>
+      <div class="hall-of-fame-image-container" data-rank="16th">
+        <a href="https://bugcrowd.com/aylo-trafficjunky-mbb-og/hall-of-fame" target="_blank">
+          <img src="https://cdn.centra.ai/usercontent/r/600x600/616_c508108e6e71404b8d5e5eb1ef39d576.png/TrafficJunky.png?s=Lzc_6EYNQChAtVuXnsTikw&e=2186241600&skv=1&on=1" alt="TrafficJunky" class="hall-of-fame-image">
+        </a>
+      </div>
+      <div class="hall-of-fame-image-container" data-rank="2nd">
+        <a href="https://bugcrowd.com/navan/hall-of-fame" target="_blank">
+          <img src="https://www.fintechfutures.com/files/2023/04/Navan.jpg" alt="Navan" class="hall-of-fame-image">
+        </a>
+      </div>
+      <div class="hall-of-fame-image-container" data-rank="11th">
+        <a href="https://bugcrowd.com/indeed/hall-of-fame" target="_blank">
+          <img src="https://indeed.design/static/8144179051d754aa0439d7963bbbe25f/ca27b/Indeed-logo-icon-with-shapes.webp" alt="Indeed" class="hall-of-fame-image">
+        </a>
+      </div>
+      <div class="hall-of-fame-image-container" data-rank="14th">
+        <a href="https://hackerone.com/hostinger/thanks" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Hostinger_logo.png/600px-Hostinger_logo.png" alt="Hostinger" class="hall-of-fame-image">
+        </a>
+      </div>
+      <div class="hall-of-fame-image-container" data-rank="17th">
+        <a href="https://hackerone.com/frontegg/thanks" target="_blank">
+          <img src="https://cdn-1.webcatalog.io/catalog/frontegg/frontegg-icon-filled-256.png?v=1673338063635" alt="Frontegg" class="hall-of-fame-image">
+        </a>
+      </div>
+      <div class="hall-of-fame-image-container" data-rank="3rd">
+        <a href="https://hackerone.com/publitas/thanks" target="_blank">
+          <img src="https://cdn.join.com/64463094b77cc70009c28614/publitas-com-b-v-logo-xl.png" alt="Publitas" class="hall-of-fame-image">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="leaderboard-section">
+  <div class="container">
+    <h2 class="section-title" style="color: white;">HackerOne Leaderboard</h2>
+    <div class="leaderboard-wrapper">
+      <div class="leaderboard-item">
+        <span class="leaderboard-year">2023:</span>
+        <span class="leaderboard-ranking">Ranked 50 all over the world <a href="https://hackerone.com/leaderboard/reputation?year=2023&country=BD">(Leaderboard Online Link)</a></span>
+      </div>
+      <div class="leaderboard-item">
+        <span class="leaderboard-year">2023:</span>
+        <span class="leaderboard-ranking">Ranked 2nd all over Bangladesh <a href="https://hackerone.com/leaderboard/country?year=2023&country=BD">(Leaderboard Online Link)</a></span>
+      </div>
+      <div class="leaderboard-item">
+        <span class="leaderboard-year">2024:</span>
+        <span class="leaderboard-ranking">Ranked 2nd all over Bangladesh <a href="https://hackerone.com/leaderboard/country?year=2024&country=BD">(Leaderboard Online Link)</a></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Professor Software Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- Twitter JavaScript to render embedded tweets -->
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
